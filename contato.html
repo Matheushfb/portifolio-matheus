@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Contato</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand">Matheus Brandão | Currículo Online</div>
+        <div class="nav-controls">
+          <button id="theme-toggle" class="theme-toggle" type="button">Tema escuro</button>
+          <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Abrir menu">
+            Menu
+          </button>
+        </div>
+        <nav id="main-nav" class="main-nav" aria-label="Menu principal">
+          <ul>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a class="active" href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-card">
+        <h1>Contato</h1>
+        <p>
+          Envie uma mensagem pelo formulário abaixo. Os campos são validados em JavaScript
+          antes da simulação de envio.
+        </p>
+        <p>
+          Perfil profissional:
+          <a
+            href="https://www.linkedin.com/in/matheusbrand%C3%A3o-/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >linkedin.com/in/matheus-brandão-80284952</a
+          >
+        </p>
+
+        <!-- Formulário com validação em JS e feedback visual para o usuário. -->
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="name">
+            Nome
+            <input id="name" name="name" type="text" placeholder="Digite seu nome" />
+          </label>
+
+          <label for="email">
+            E-mail
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="usuario@dominio.com"
+            />
+          </label>
+
+          <label for="message">
+            Mensagem
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Digite sua mensagem"
+            ></textarea>
+          </label>
+
+          <button type="submit">Enviar mensagem</button>
+        </form>
+
+        <div id="form-feedback" class="feedback" role="status" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 - Portfólio pessoal de Matheus Brandão.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
